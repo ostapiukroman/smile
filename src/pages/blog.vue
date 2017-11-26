@@ -1,16 +1,18 @@
 <template>
-  <div class="blog">
-  	<nav>
-  		<router-link :to="{ name: 'Categories' }">Categories</router-link>
-  		<router-link :to="{ name: 'Authors' }">Authors</router-link>
-  	</nav>
+  <main class="blog">
+    <div class="l-background-wrap-medium blog__header">
+      <div class="l-blog-header">
+        <h2 class="t-display">ReefPoints</h2>
+      </div>
+    </div>
+    <blogNav />
     <h2 v-if="!noPosts">Don't have posts</h2>
     <section v-else class="l-posts">
       <postShortTemplate v-for="post in posts" :key="post.slug" :post="post"></postShortTemplate>
       <listPagination :numberPosts="maxPosts" :postsPerPage="postsPerPage" />
     </section>
 
-  </div>
+  </main>
 </template>
 
 <script>
@@ -20,6 +22,7 @@ import posts from '../resource/blog.json'
 import menuBar from '../components/blocks/menu-bar.vue'
 import postShortTemplate from '../components/post-short-template.vue'
 import listPagination from '../components/list-pagination.vue'
+import blogNav from '../components/blog-nav.vue'
 
 export default {
   name: 'Blog',
@@ -36,7 +39,8 @@ export default {
   components: {
     menuBar,
     postShortTemplate,
-    listPagination
+    listPagination,
+    blogNav
   },
   created: function () {
     this.getPage()

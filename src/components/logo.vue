@@ -13,9 +13,4 @@ export default {
 </script>
 
 <style>
-	.nav__logo__link .dy-logo-full {
-	    height: 44px;
-	    width: 136px;
-	    fill: #424242;
-	}
 </style>

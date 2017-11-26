@@ -16,14 +16,4 @@ export default {
 </script>
 
 <style>
-*{
-	padding: 0;
-	margin: 0;
-	font-family: inherit;
-  list-style-type: none;
-  box-sizing: border-box;
-  color:inherit;
-  font-size: inherit;
-  text-decoration: inherit;
-}
 </style>
