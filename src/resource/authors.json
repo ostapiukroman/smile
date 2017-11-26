@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Marin 1",
+        "id": 1,
+        "slug": "marin-abernethy-1",
+        "status": "front-end"
+    },
+    {
+        "name": "Marin 2",
+        "id": 2,
+        "slug": "marin-abernethy-2",
+        "status": "DEVELOPER"
+    },
+    {
+        "name": "Marin 3",
+        "id": 3,
+        "slug": "marin-abernethy-3",
+        "status": "back-end"
+    },
+    {
+        "name": "Marin 4",
+        "id": 4,
+        "slug": "marin-abernethy-4",
+        "status": "DEVELOPER"
+    },
+    {
+        "name": "Marin 5",
+        "id": 5,
+        "slug": "marin-abernethy-5",
+        "status": "designer"
+    },
+    {
+        "name": "Marin 6",
+        "id": 6,
+        "slug": "marin-abernethy-6",
+        "status": "ceo"
+    },
+    {
+        "name": "Marin 7",
+        "id": 7,
+        "slug": "marin-abernethy-7",
+        "status": "designer"
+    },
+    {
+        "name": "Marin 8",
+        "id": 8,
+        "slug": "marin-abernethy-8",
+        "status": "DEVELOPER"
+    },
+    {
+        "name": "Marin 9",
+        "id": 9,
+        "slug": "marin-abernethy-9",
+        "status": "ceo"
+    },
+    {
+        "name": "Marin 10",
+        "id": 10,
+        "slug": "marin-abernethy-10",
+        "status": "designer"
+    }
+]

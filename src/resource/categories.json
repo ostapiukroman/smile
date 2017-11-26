@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Action-cable",
+        "slug": "action-cable",
+        "id": 1
+    },
+    {
+        "name": "Addon",
+        "slug": "addon",
+        "id": 2
+    },
+    {
+        "name": "Advertising",
+        "slug": "advertising",
+        "id": 3
+    },
+    {
+        "name": "Agile",
+        "slug": "agile",
+        "id": 4
+    },
+    {
+        "name": "Alumni",
+        "slug": "alumni",
+        "id": 5
+    },
+    {
+        "name": "Animation",
+        "slug": "animation",
+        "id": 6
+    },
+    {
+        "name": "Announcement",
+        "slug": "announcement",
+        "id": 7
+    },
+    {
+        "name": "Art",
+        "slug": "art",
+        "id": 8
+    },
+    {
+        "name": "Authorization",
+        "slug": "authorization",
+        "id": 9
+    },
+    {
+        "name": "Automation",
+        "slug": "automation",
+        "id": 10
+    }
+]
