@@ -5,18 +5,18 @@
         "id": 1
     },
     {
-        "name": "Addon",
-        "slug": "addon",
+        "name": "Design",
+        "slug": "design",
         "id": 2
     },
     {
-        "name": "Advertising",
-        "slug": "advertising",
+        "name": "Engineering",
+        "slug": "engineering",
         "id": 3
     },
     {
-        "name": "Agile",
-        "slug": "agile",
+        "name": "Business",
+        "slug": "business",
         "id": 4
     },
     {

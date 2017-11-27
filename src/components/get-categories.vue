@@ -1,7 +1,5 @@
 <template>
-  <span>
-    <router-link :to="{ name: 'Category', params: { slug: category.slug } }" class="post__tags__tag t-link" :class="category.slug">{{ category.name }}</router-link>
-  </span>
+    <router-link :to="{ name: 'Category', params: { slug: category.slug, page_id: 1 } }" class="post__tags__tag t-link" :class="category.slug">{{ category.name }}</router-link>
 </template>
 
 <script>

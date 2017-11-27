@@ -1545,7 +1545,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (max-width:799px) {
-    .nav-dropdown__options__option:not(: first-of-type), .nav-dropdown__options__option:not(: last-of-type) {
+    .nav-dropdown__options__option:not(: first-of-type), .nav-dropdown__options__option:not(:last-of-type) {
         padding-top: .556em;
         padding-bottom: .556em
     }
@@ -1707,7 +1707,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (max-width:599px) {
-    .footer__link-group:not(: last-of-type) {
+    .footer__link-group:not(:last-of-type) {
         margin-bottom: 46px
     }
 }
@@ -1895,7 +1895,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (min-width:600px) {
-    .client-list__item:not(: last-of-type) {
+    .client-list__item:not(:last-of-type) {
         margin-right: 1em
     }
 }
@@ -2163,7 +2163,7 @@ textarea:-moz-ui-invalid {
     transition: .2s ease background, .2s ease color
 }
 
-.pagination-numbers__link__number.active,
+.router-link-active .pagination-numbers__link__number,
 .pagination-numbers__link__number:active,
 .pagination-numbers__link__number:hover {
     background: #343434;
@@ -4844,7 +4844,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (max-width:710px) {
-    .limitations__split-container__item:not(: last-of-type) {
+    .limitations__split-container__item:not(:last-of-type) {
         margin-bottom: 60px
     }
 }
@@ -5007,19 +5007,19 @@ textarea:-moz-ui-invalid {
 }
 
 @media (max-width:499px) {
-    .l-blog-wrap .blog__nav__link:not(: last-of-type) {
+    .l-blog-wrap .blog__nav__link:not(:last-of-type) {
         margin-right: 10px
     }
 }
 
 @media (min-width:500px) and (max-width:899px) {
-    .l-blog-wrap .blog__nav__link:not(: last-of-type) {
+    .l-blog-wrap .blog__nav__link:not(:last-of-type) {
         margin-right: 40px
     }
 }
 
 @media (min-width:900px) {
-    .l-blog-wrap .blog__nav__link:not(: last-of-type) {
+    .l-blog-wrap .blog__nav__link:not(:last-of-type) {
         margin-right: 60px
     }
 }
@@ -5308,4 +5308,10 @@ textarea:-moz-ui-invalid {
 
 .client-list__item img {
     max-width: inherit
+}
+.arrow-reverce{
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }

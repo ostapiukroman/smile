@@ -1,14 +1,15 @@
 <template>
-  <div class="pageNavi">
-    <router-link v-if="currentPage > 1" :to="{ name: pageName, params: { page_id: currentPage - 1 }}"> < </router-link>
+  <nav class="l-pagination l-mobile-gutter ember-view" v-if="arrayLinks.length > 1">
+    <router-link v-if="currentPage > 1" :to="{ name: pageName, params: { page_id: currentPage - 1 }}" class="arrow posts__previous ember-view"> <arrowLeft class="arrow-reverce" /> </router-link>
     <div class="l-pagination-numbers">
-      <router-link v-for="link in arrayLinks" :key="link" :to="{ name: pageName, params: { page_id: link }}">{{ link }}</router-link>
+      <router-link v-for="link in arrayLinks" :key="link" :to="{ name: pageName, params: { page_id: link }}" class="pagination-numbers__link ember-view"><span class="pagination-numbers__link__number ">{{ link }}</span></router-link>
     </div>
-    <router-link v-if="currentPage < Math.ceil(numberPosts / postsPerPage)" :to="{ name: pageName, params: { page_id: (Number(currentPage) + 1) }}"> > </router-link>
-  </div>
+    <router-link v-if="currentPage < Math.ceil(numberPosts / postsPerPage)" :to="{ name: pageName, params: { page_id: (Number(currentPage) + 1) }}" class="arrow posts__next ember-view"> <arrowLeft /> </router-link>
+  </nav>
 </template>
 
 <script>
+import arrowLeft from './icons/arrowLeft.vue'
 export default {
   name: 'listPagination',
   data () {
@@ -29,6 +30,7 @@ export default {
     }
   },
   components: {
+    arrowLeft
   },
   created: function () {
     this.getPageNav()

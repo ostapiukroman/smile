@@ -1,8 +1,9 @@
 <template>
   <div>
-  	<router-link v-for="author in authors" :key="author.slug" :to="{ name: 'Author', params: { slug: author.slug } }" class="post__tags__tag t-link" :class="author.slug">
+  	<router-link v-for="author in authors" :key="author.slug" :to="{ name: 'Author', params: { slug: author.slug, page_id: 1 } }" class="filter ember-view" :class="author.slug">
+      <img src="~@/assets/img/default.jpg" class="filter__image">
   		<h2 class="filter__name t-heading">{{ author.name }}</h2>
-		<count :authorId="author.id" />
+		<count :authorId="author.id" class="filter__count t-body-large" />
   	</router-link>
   </div>
 </template>

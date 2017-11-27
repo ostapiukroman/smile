@@ -1,21 +1,23 @@
 <template>
-  <div class="post" :class="post.slug">
-    <div class="post__header l-mobile-gutter">
-      <h1 class="post__title">{{post.title}}</h1>
-      <div class="post__data">
-        <span class="post__data__author">By: <get-author-link :authorId="post.authors"></get-author-link></span><time id="ember859" class="post__data__date ember-view">{{post.date}} </time>
+  <main class="blog" :class="post.slug">
+    <section class="l-posts">
+      <div class="post">
+        <div class="post__header l-mobile-gutter">
+          <h1 class="post__title">{{post.title}}</h1>
+          <div class="post__data">
+            <span class="post__data__author">By: <get-author-link :authorId="post.authors"></get-author-link></span><time id="ember859" class="post__data__date ember-view">{{post.date}} </time>
+          </div>
+        </div>
+        <div class="post__main ember-view" v-html="post.body"></div>
       </div>
-    </div>
-    <div class="post__main ember-view">
-      {{post.body}}
-    </div>
-    <div class="categories">
-      <get-categories v-for="category in post.categories" :key="category" :categoriesId="category"></get-categories>
-    </div>
-    <div class="l-email-signup l-mobile-gutter">
-      <subscribe :postSlug="post.slug" />
-    </div>
-  </div>
+      <div class="post__tags l-mobile-gutter">
+        <get-categories v-for="category in post.categories" :key="category" :categoriesId="category"></get-categories>
+      </div>
+      <div class="l-email-signup l-mobile-gutter">
+        <subscribe :postSlug="post.slug" />
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>

@@ -5,42 +5,52 @@
         <h2 class="t-display">ReefPoints</h2>
       </div>
     </div>
-    <blogNav />
-    <h2 v-if="!noPosts">Don't have posts</h2>
-    <section v-else class="l-posts">
+    <blogNav :topCat="topCat" />
+    <section class="l-posts">
+      <filterHeader :filter="filter" v-if="filterSlug"></filterHeader>
       <postShortTemplate v-for="post in posts" :key="post.slug" :post="post"></postShortTemplate>
+      <router-view></router-view>
       <listPagination :numberPosts="maxPosts" :postsPerPage="postsPerPage" />
     </section>
-
   </main>
 </template>
 
 <script>
-// Posts
+// Data
 import posts from '../resource/blog.json'
+import categories from '../resource/categories.json'
+import authors from '../resource/authors.json'
 // Components
 import menuBar from '../components/blocks/menu-bar.vue'
 import postShortTemplate from '../components/post-short-template.vue'
 import listPagination from '../components/list-pagination.vue'
 import blogNav from '../components/blog-nav.vue'
+import filterHeader from '../components/filter-header.vue'
 
 export default {
   name: 'Blog',
   data () {
     return {
       allPosts: posts,
+      afterFilterPosts: null,
+      filters: null,
+      filter: null,
       posts: null,
       postsPerPage: 5,
       currentPage: null,
       noPosts: true,
-      maxPosts: null
+      maxPosts: null,
+      filterType: null,
+      filterSlug: null,
+      topCat: ['design', 'engineering', 'business']
     }
   },
   components: {
     menuBar,
     postShortTemplate,
     listPagination,
-    blogNav
+    blogNav,
+    filterHeader
   },
   created: function () {
     this.getPage()
@@ -50,15 +60,43 @@ export default {
   },
   methods: {
     getPage () {
-      this.currentPage = this.$route.params.page_id
-      this.maxPosts = this.allPosts.length
-      var postsPerPage = this.postsPerPage
-      var currentPage = this.currentPage
-      this.posts = this.allPosts.filter(function (array, index) {
-        if (index < (postsPerPage * currentPage) && index >= (postsPerPage * (currentPage - 1))) { return true }
+      const self = this
+      self.filterSlug = self.filterType = null
+      if (self.$route.params.slug !== undefined) {
+        self.filterSlug = self.$route.params.slug
+        self.filterType = self.$route.name
+        // eslint-disable-next-line
+        self.filters = (self.filterType === 'Author') ? authors : categories
+        self.filters.forEach(function (array) {
+          if (array.slug === self.filterSlug) {
+            self.filter = array
+          }
+        })
+        self.afterFilterPosts = self.allPosts.filter(function (array) {
+          if (self.filterType === 'Author') {
+            // eslint-disable-next-line
+            return (array.authors === self.filter.id) ? true : false
+          } else {
+            for (var i = 0; i < array.categories.length; i++) {
+              // eslint-disable-next-line
+              if (array.categories[i] === self.filter.id) {
+                return true
+              }
+            }
+            return false
+          }
+        })
+      } else {
+        self.afterFilterPosts = self.allPosts
+      }
+
+      self.currentPage = self.$route.params.page_id
+      self.maxPosts = self.afterFilterPosts.length
+      self.posts = self.afterFilterPosts.filter(function (array, index) {
+        if (index < (self.postsPerPage * self.currentPage) && index >= (self.postsPerPage * (self.currentPage - 1))) { return true }
       })
       // eslint-disable-next-line
-      this.noPosts = (this.posts.length === 0) ? false : true
+      self.noPosts = (self.posts.length === 0) ? false : true
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <span>
-    <router-link :to="{ name: 'Author', params: { slug: author.slug } }">{{ author.name }}</router-link>
+    <router-link :to="{ name: 'Author', params: { slug: author.slug, page_id: 1 } }">{{ author.name }}</router-link>
   </span>
 </template>
 
@@ -23,6 +23,7 @@ export default {
   },
   created: function () {
     this.getData()
+    console.log(this.author)
   },
   methods: {
     getData: function () {

@@ -29,14 +29,21 @@ export default {
       defoult: null
     }
   },
+  watch: {
+    '$route': 'countStart'
+  },
   created: function () {
-    if (this.categoryId) { this.getCat() }
-    if (this.authorId) { this.getAuth() }
+    this.countStart()
   },
   methods: {
+    countStart: function () {
+      if (this.categoryId) { this.getCat() }
+      if (this.authorId) { this.getAuth() }
+    },
     getCat: function () {
       const self = this
-      this.posts.forEach(function (array) {
+      self.count = 0
+      self.posts.forEach(function (array) {
         for (var i = 0; i < array.categories.length; i++) {
           if (array.categories[i] === self.categoryId) {
             self.count++

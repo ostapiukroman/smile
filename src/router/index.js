@@ -6,6 +6,8 @@ import work from '../pages/work'
 import whyDockyard from '../pages/why-dockyard'
 import blog from '../pages/blog'
 import contact from '../pages/contact'
+import designConsulting from '../pages/design-consulting.vue'
+import progressiveWebApps from '../pages/progressive-web-apps.vue'
 
 // subpages
 // ---------------------------
@@ -17,12 +19,8 @@ import subWork from '../pages/subpages/work.vue'
 import blogPost from '../pages/subpages/blog-post.vue'
 // Authors post
 import authors from '../pages/subpages/authors.vue'
-// Author post
-import author from '../pages/subpages/author.vue'
 // Categories post
 import categories from '../pages/subpages/categories.vue'
-// Category post
-import category from '../pages/subpages/category.vue'
 
 Vue.use(Router)
 
@@ -60,29 +58,34 @@ const router = new Router({
       component: whyDockyard
     },
     {
-      path: '/blog/:page_id',
+      path: '/blog/page/:page_id',
       name: 'Blog',
-      component: blog
+      component: blog,
+      children: [
+        {
+          path: '/blog/category',
+          name: 'Categories',
+          component: categories
+        },
+        {
+          path: '/blog/authors',
+          name: 'Authors',
+          component: authors
+        },
+        {
+          path: '/blog/category/:slug/:page_id',
+          name: 'Category'
+        },
+        {
+          path: '/blog/authors/:slug/:page_id',
+          name: 'Author'
+        }
+      ]
     },
     {
-      path: '/blog/authors',
-      name: 'Authors',
-      component: authors
-    },
-    {
-      path: '/blog/authors/:slug',
-      name: 'Author',
-      component: author
-    },
-    {
-      path: '/blog/category',
-      name: 'Categories',
-      component: categories
-    },
-    {
-      path: '/blog/category/:slug',
-      name: 'Category',
-      component: category
+      path: '/blog/:slug',
+      name: 'blogPosts',
+      component: blogPost
     },
     {
       path: '/contact/hire-us',
@@ -90,9 +93,14 @@ const router = new Router({
       component: contact
     },
     {
-      path: '/blog/:slug',
-      name: 'blogPosts',
-      component: blogPost
+      path: '/design-consulting',
+      name: 'designConsulting',
+      component: designConsulting
+    },
+    {
+      path: '/progressive-web-apps',
+      name: 'progressiveWebApps',
+      component: progressiveWebApps
     },
     {
       path: '*',
