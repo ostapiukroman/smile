@@ -2773,7 +2773,7 @@ textarea:-moz-ui-invalid {
         display: table;
         clear: both
     }
-    .home__services__button .service-icon {
+    .home__services__button .service-icon, .home__services__button .service-icon svg {
         float: left
     }
 }
@@ -2823,7 +2823,7 @@ textarea:-moz-ui-invalid {
     }
 }
 
-.home__services__button .service-icon {
+.home__services__button .service-icon, .home__services__button .service-icon svg {
     margin-bottom: 20px;
     fill: #343434;
     opacity: .7;
@@ -2831,7 +2831,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (max-width:799px) {
-    .home__services__button .service-icon {
+    .home__services__button .service-icon, .home__services__button .service-icon svg {
         height: 64px;
         width: 64px
     }
@@ -2841,14 +2841,14 @@ textarea:-moz-ui-invalid {
     .home__services__button .t-list-heading {
         font-size: .9em
     }
-    .home__services__button .service-icon {
+    .home__services__button .service-icon, .home__services__button .service-icon svg {
         height: 40px;
         width: 40px
     }
 }
 
 @media (min-width:950px) {
-    .home__services__button .service-icon {
+    .home__services__button .service-icon, .home__services__button .service-icon svg {
         height: 64px;
         width: 64px
     }
@@ -3543,7 +3543,7 @@ textarea:-moz-ui-invalid {
     color: #000
 }
 
-.latest-news__items__item__img {
+.latest-news__items__item__img, .latest-news__items__item__img img {
     -ms-flex-order: 1;
     order: 1;
     margin-bottom: 30px;
@@ -3554,7 +3554,7 @@ textarea:-moz-ui-invalid {
 }
 
 @media (min-width:600px) and (max-width:1009px) {
-    .latest-news__items__item__img {
+    .latest-news__items__item__img, .latest-news__items__item__img img {
         -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center

@@ -8,6 +8,10 @@ import blog from '../pages/blog'
 import contact from '../pages/contact'
 import designConsulting from '../pages/design-consulting.vue'
 import progressiveWebApps from '../pages/progressive-web-apps.vue'
+import press from '../pages/press.vue'
+import pressReleases from '../pages/pressReleases.vue'
+import pressRelease from '../pages/pressRelease.vue'
+import terms from '../pages/terms-of-service-and-privacy-policy.vue'
 
 // subpages
 // ---------------------------
@@ -101,6 +105,26 @@ const router = new Router({
       path: '/progressive-web-apps',
       name: 'progressiveWebApps',
       component: progressiveWebApps
+    },
+    {
+      path: '/press',
+      name: 'press',
+      component: press
+    },
+    {
+      path: '/press/releases',
+      name: 'pressReleases',
+      component: pressReleases
+    },
+    {
+      path: '/press/releases/:slug',
+      name: 'pressRelease',
+      component: pressRelease
+    },
+    {
+      path: '/terms-of-service-and-privacy-policy',
+      name: 'terms-of-service-and-privacy-policy',
+      component: terms
     },
     {
       path: '*',
