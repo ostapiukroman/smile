@@ -13,7 +13,8 @@
 			</div>
 			<div class="section__wide">
 			  <div class="l-card l-card-showcase-media" :class="'l-card--' + subpage.slug">
-			  </div>
+          <img :src="'https://dockyard.com/assets/images/work/'+subpage.img" class="img" :alt="subpage.slug">   
+        </div>
 			</div>
     	</router-link>
     </section>
