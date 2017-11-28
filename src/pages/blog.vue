@@ -21,7 +21,6 @@ import posts from '../resource/blog.json'
 import categories from '../resource/categories.json'
 import authors from '../resource/authors.json'
 // Components
-import menuBar from '../components/blocks/menu-bar.vue'
 import postShortTemplate from '../components/post-short-template.vue'
 import listPagination from '../components/list-pagination.vue'
 import blogNav from '../components/blog-nav.vue'
@@ -46,7 +45,6 @@ export default {
     }
   },
   components: {
-    menuBar,
     postShortTemplate,
     listPagination,
     blogNav,
@@ -63,6 +61,7 @@ export default {
       const self = this
       self.filterSlug = self.filterType = null
       if (self.$route.params.slug !== undefined) {
+        // Set some data for children pages with slug
         self.filterSlug = self.$route.params.slug
         self.filterType = self.$route.name
         // eslint-disable-next-line
@@ -72,6 +71,7 @@ export default {
             self.filter = array
           }
         })
+        // Filter data for authors or categories
         self.afterFilterPosts = self.allPosts.filter(function (array) {
           if (self.filterType === 'Author') {
             // eslint-disable-next-line

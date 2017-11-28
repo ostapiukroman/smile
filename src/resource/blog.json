@@ -1,7 +1,7 @@
 [
     {
         "title": "TIL: Ecto supports a query inside another query-1",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/lhrJ9QR.png\">",
         "subtitle": "Here's what I learned in a year of full-remote.-1",
         "slug": "til-ecto-supports-query-inside-query-1",
         "authors": 1,
@@ -41,7 +41,7 @@
     },
     {
         "title": "TIL: Ecto supports a query inside another query-5",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/RJb2fks.jpg\">",
         "subtitle": "Here's what I learned in a year of full-remote.-5",
         "slug": "til-ecto-supports-query-inside-query-5",
         "authors": 5,
@@ -51,7 +51,7 @@
     },
     {
         "title": "TIL: Ecto supports a query inside another query-6",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/lhrJ9QR.png\">",
         "subtitle": "Here's what I learned in a year of full-remote.-6",
         "slug": "til-ecto-supports-query-inside-query-6",
         "authors": 1,
@@ -61,7 +61,7 @@
     },
     {
         "title": "TIL: Ecto supports a query inside another query-7",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/XQEysi6.jpg\">",
         "subtitle": "Here's what I learned in a year of full-remote.-7",
         "slug": "til-ecto-supports-query-inside-query-7",
         "authors": 1,
@@ -151,7 +151,7 @@
     },
     {
         "title": "TIL: Ecto supports a query inside another query-16",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/8uagm5W.png\">",
         "subtitle": "Here's what I learned in a year of full-remote.-16",
         "slug": "til-ecto-supports-query-inside-query-16",
         "authors": 9,
@@ -165,7 +165,7 @@
         "subtitle": "Here's what I learned in a year of full-remote.-17",
         "slug": "til-ecto-supports-query-inside-query-17",
         "authors": 9,
-        "categories": [7],
+        "categories": [7, 8],
         "date": "November 9th, 2017",
         "body": "<p><a href=\"http://elixir-lang.org/getting-started/pattern-matching.html\" title=\"\">Pattern matching</a> and <a href=\"http://elixir-lang.org/getting-started/case-cond-and-if.html#expressions-in-guard-clauses\" title=\"\">guard expressions</a> are fundamental towriting recursive function definitions in <a href=\"http://elixir-lang.org/\" title=\"\">Elixir</a>. Sometimes guard clauses and pattern matchingcan be used for the same purpose. For example:</p><pre class=\" line-numbers language-elixir\"><code class=\"elixir  language-elixir\"><span class=\"token comment\" spellcheck=\"true\"># pattern matching</span>\n <span class=\"token keyword\">defmodule</span> Exponent <span class=\"token keyword\">do</span>\n <span class=\"token keyword\">def</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> <span class=\"token number\">0</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> <span class=\"token number\">1</span>\n <span class=\"token keyword\">def</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> n<span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> value <span class=\"token operator\">*</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> n <span class=\"token operator\">-</span> <span class=\"token number\">1</span><span class=\"token punctuation\">)</span>\n <span class=\"token keyword\">end</span>\n \n <span class=\"token comment\" spellcheck=\"true\"># guard expression</span>\n <span class=\"token keyword\">defmodule</span> Exponent <span class=\"token keyword\">do</span>\n <span class=\"token keyword\">def</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> n<span class=\"token punctuation\">)</span> <span class=\"token keyword\">when</span> n <span class=\"token operator\">==</span> <span class=\"token number\">0</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> <span class=\"token number\">1</span>\n <span class=\"token keyword\">def</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> n<span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> value <span class=\"token operator\">*</span> power<span class=\"token punctuation\">(</span>value<span class=\"token punctuation\">,</span> n <span class=\"token operator\">-</span> <span class=\"token number\">1</span><span class=\"token punctuation\">)</span>\n <span class=\"token keyword\">end</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>In both cases above, we only want the first <code class=\"inline\">power</code> function to run when the second argument is equal to <code class=\"inline\">0</code>.When it is as simple as equality, I tend to use the pattern matching syntax. I typically leave the guard for more complexlogic like <code class=\"inline\">when rem(x, divisor)==0</code>. However, to check whether one argument is equal to another I thought a guard was neccessary: <code class=\"inline\">when a==b</code>.But, <strong>today I learned</strong>, this can also be handled with pattern matching, like so:</p><pre class=\" line-numbers language-elixir\"><code class=\"elixir  language-elixir\"><span class=\"token comment\" spellcheck=\"true\"># guard</span>\n <span class=\"token keyword\">def</span> equality<span class=\"token punctuation\">(</span>a<span class=\"token punctuation\">,</span> b<span class=\"token punctuation\">)</span> <span class=\"token keyword\">when</span> a <span class=\"token operator\">==</span> b<span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> IO<span class=\"token punctuation\">.</span>puts <span class=\"token string\">\"equal\"</span>\n <span class=\"token keyword\">def</span> equality<span class=\"token punctuation\">(</span>a<span class=\"token punctuation\">,</span> b<span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> IO<span class=\"token punctuation\">.</span>puts <span class=\"token string\">\"not equal\"</span>\n \n <span class=\"token comment\" spellcheck=\"true\"># pattern matching</span>\n <span class=\"token keyword\">def</span> equality<span class=\"token punctuation\">(</span>a<span class=\"token punctuation\">,</span> a<span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> IO<span class=\"token punctuation\">.</span>puts <span class=\"token string\">\"equal\"</span>\n <span class=\"token keyword\">def</span> equality<span class=\"token punctuation\">(</span>a<span class=\"token punctuation\">,</span> b<span class=\"token punctuation\">)</span><span class=\"token punctuation\">,</span> <span class=\"token attr-name\">do:</span> IO<span class=\"token punctuation\">.</span>puts <span class=\"token string\">\"not equal\"</span><span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Tada! There you have it. It seems so simple I don’t know how I hadn’t tried it earlier!</p>"
     },
@@ -191,7 +191,7 @@
     },
     {
         "title": "TIL: Ecto supports a query inside another query-20",
-        "thumbnail": "<img src=\"https://i.imgur.com/jiOeJLU.jpg\">",
+        "thumbnail": "<img src=\"https://i.imgur.com/ZoOHvvc.png\">",
         "subtitle": "Here's what I learned in a year of full-remote.-20",
         "slug": "til-ecto-supports-query-inside-query-20",
         "authors": 1,

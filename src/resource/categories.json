@@ -1,7 +1,7 @@
 [
     {
-        "name": "Action-cable",
-        "slug": "action-cable",
+        "name": "Ember",
+        "slug": "ember",
         "id": 1
     },
     {
@@ -35,13 +35,13 @@
         "id": 7
     },
     {
-        "name": "Art",
-        "slug": "art",
+        "name": "Elixir",
+        "slug": "elixir",
         "id": 8
     },
     {
-        "name": "Authorization",
-        "slug": "authorization",
+        "name": "Phoenix",
+        "slug": "phoenix",
         "id": 9
     },
     {

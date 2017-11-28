@@ -29,7 +29,18 @@ export default {
       posts: null
     }
   },
+  props: {
+    cutId: {
+      type: Array,
+      default: null
+    }
+  },
   created: function () {
+    // Check if need to use filter for posts
+    if (this.cutId !== null) {
+      this.filterCut()
+    }
+    // Set the last 3 posts
     this.posts = this.blog.filter(function (array, index) {
       if (index < 3) {
         return true
@@ -37,7 +48,26 @@ export default {
         return false
       }
     })
-    console.log(this.posts)
+  },
+  methods: {
+    filterCut () {
+      const self = this
+      self.blog = blog.filter(function (item) {
+        if (self.hasCat(item.categories, self.cutId)) {
+          return true
+        } else {
+          return false
+        }
+      })
+    },
+    hasCat (array, cutId) {
+      for (var i = 0; i < array.length; i++) {
+        if (cutId.indexOf(array[i]) !== -1) {
+          return true
+        }
+      }
+      return false
+    }
   },
   components: {
     arrowLeft

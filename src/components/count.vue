@@ -42,7 +42,9 @@ export default {
     },
     getCat: function () {
       const self = this
+      // reset count
       self.count = 0
+      // Set counts for categories
       self.posts.forEach(function (array) {
         for (var i = 0; i < array.categories.length; i++) {
           if (array.categories[i] === self.categoryId) {
@@ -52,6 +54,7 @@ export default {
       })
       this.addText()
     },
+    // Set counts for authors
     getAuth: function () {
       const self = this
       this.posts.forEach(function (array) {
@@ -61,6 +64,7 @@ export default {
       })
       this.addText()
     },
+    // Function add the text (post or posts)
     addText: function () {
       if (!this.showText) { return }
       this.count += ' '

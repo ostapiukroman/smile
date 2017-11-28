@@ -23,11 +23,11 @@ export default {
   },
   created: function () {
     this.getData()
-    console.log(this.author)
   },
   methods: {
     getData: function () {
       const self = this
+      // set author info with author id
       self.authors.forEach(function (array) {
         if (array.id === self.authorId) {
           self.author = array

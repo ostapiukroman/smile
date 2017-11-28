@@ -40,6 +40,7 @@ export default {
   methods: {
     getPage () {
       const self = this
+      // Set categories info for slugs from array (topCat)
       categories.forEach(function (array) {
         if (self.topCat.indexOf(array.slug) >= 0) {
           self.categories[self.topCat.indexOf(array.slug)] = array

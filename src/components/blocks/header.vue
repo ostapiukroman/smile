@@ -17,7 +17,6 @@
 </template>
 
 <script>
-// console.log($route);
 import Logo from '../logo.vue'
 
 export default {

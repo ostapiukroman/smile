@@ -11,7 +11,7 @@
           <h3 class="t-list-heading">Services</h3>
           <ul>
             <li v-for="item in services" class="footer__link-group__link">
-              <router-link :to="{ name: 'subWork', params: { slug: item.slug } }" class="footer__nav__link ember-view">{{ item.title }}</router-link>
+              <router-link :to="{ name: 'subServices', params: { slug: item.slug } }" class="footer__nav__link ember-view">{{ item.title }}</router-link>
             </li>
           </ul>
         </div>

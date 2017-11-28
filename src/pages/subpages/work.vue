@@ -6,7 +6,7 @@
         <h2 class="t-sub-display-secondary">{{post.desc}}</h2>
       </div>
       <div class="section__wide">
-        image here
+        <img :src="'https://dockyard.com/assets/images/work/' + post.img" :alt="post.img" class="case-study__banner">
       </div>
     </section>
     <div v-html="post.body"></div>
@@ -36,6 +36,7 @@ export default {
   },
   methods: {
     fetchData () {
+      const self = this
       self.posts.filter(function (array) {
         if (array.slug === self.$route.params.slug) {
           self.post = array

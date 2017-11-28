@@ -12,6 +12,8 @@ import press from '../pages/press.vue'
 import pressReleases from '../pages/pressReleases.vue'
 import pressRelease from '../pages/pressRelease.vue'
 import terms from '../pages/terms-of-service-and-privacy-policy.vue'
+import ember from '../pages/ember.vue'
+import phoenixConsulting from '../pages/phoenix-consulting.vue'
 
 // subpages
 // ---------------------------
@@ -127,10 +129,23 @@ const router = new Router({
       component: terms
     },
     {
+      path: '/ember-consulting',
+      name: 'ember',
+      component: ember
+    },
+    {
+      path: '/phoenix-consulting',
+      name: 'phoenix-consulting',
+      component: phoenixConsulting
+    },
+    {
       path: '*',
       redirect: '/'
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
 
 export default router
