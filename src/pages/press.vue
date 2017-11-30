@@ -101,6 +101,9 @@ export default {
       }
     }
   },
+  created: function () {
+    this.$root.title = 'Press'
+  },
   watch: {
   },
   methods: {

@@ -24,6 +24,9 @@ export default {
     return {
       releases: releases
     }
+  },
+  created: function () {
+    this.$root.title = 'Press Releases'
   }
 }
 </script>

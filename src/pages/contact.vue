@@ -24,6 +24,9 @@ export default {
       subtitle: 'Whatever your ambition, we’d love to design and build your next big idea or lend a hand on an existing one.'
     }
   },
+  created: function () {
+    this.$root.title = 'Contact'
+  },
   components: {
     contactForm
   }

@@ -122,6 +122,7 @@ export default {
   },
   created: function () {
     const self = this
+    this.$root.title = 'Progressive Web Apps'
     progressiveWebApps.forEach(function (array) {
       if (self.catSlug === array.slug) {
         self.catInfo = array

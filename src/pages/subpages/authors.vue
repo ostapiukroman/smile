@@ -18,6 +18,9 @@ export default {
       authors: authors
     }
   },
+  created: function () {
+    this.$root.title = 'Blog | Authors'
+  },
   components: {
     count
   }

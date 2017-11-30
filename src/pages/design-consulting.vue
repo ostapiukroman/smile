@@ -138,6 +138,9 @@ export default {
   name: 'Design-consulting',
   components: {
     contactForm
+  },
+  created: function () {
+    this.$root.title = 'Design Consulting'
   }
 }
 </script>

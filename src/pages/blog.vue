@@ -59,6 +59,7 @@ export default {
   methods: {
     getPage () {
       const self = this
+      self.$root.title = 'Blog'
       self.filterSlug = self.filterType = null
       if (self.$route.params.slug !== undefined) {
         // Set some data for children pages with slug
@@ -68,6 +69,7 @@ export default {
         self.filters = (self.filterType === 'Author') ? authors : categories
         self.filters.forEach(function (array) {
           if (array.slug === self.filterSlug) {
+            self.$root.title = 'Blog | ' + array.name
             self.filter = array
           }
         })

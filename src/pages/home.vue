@@ -75,11 +75,14 @@ import arrowLeft from '../components/icons/arrowLeft.vue'
 import lastCliets from '../components/last-clients.vue'
 import servicesTabs from '../components/services-tabs.vue'
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created: function () {
+    this.$root.title = 'Home'
   },
   components: {
     servicesTabs,

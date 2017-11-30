@@ -13,7 +13,22 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  data: {
+    title: '...'
+  },
   router,
   template: '<App/>',
-  components: { App }
+  components: { App },
+  watch: {
+    '$route': 'getTitle',
+    title: 'getTitle'
+  },
+  created: function () {
+    this.getTitle()
+  },
+  methods: {
+    getTitle () {
+      window.document.title = this.title
+    }
+  }
 })

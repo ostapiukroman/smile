@@ -230,6 +230,9 @@ export default {
     contactForm,
     likeIcon,
     latestPosts
+  },
+  created: function () {
+    this.$root.title = 'Ember'
   }
 }
 </script>

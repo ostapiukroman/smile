@@ -35,6 +35,7 @@ export default {
       const self = this
       self.posts.forEach(function (array) {
         if (array.slug === self.$route.params.slug) {
+          self.$root.title = 'Press | ' + array.title
           self.post = array
           return false
         }

@@ -1,10 +1,14 @@
 <template>
-  <header>
+  <header :class="mobShow ? 'has-mobile-nav-showing' : 'close'">
     <nav class="l-nav">
       <div class="nav__icons">
         <logo />
+        <div class="nav__icon-menu icon-menu" v-on:click="mobShow = !mobShow">
+          <div class="icon-menu__top-bar"></div>
+          <div class="icon-menu__center-bar"></div>
+          <div class="icon-menu__bottom-bar"></div>
+        </div>
       </div>
-
       <div class="nav__links">
         <router-link :to="{ name: 'Services' }" class="nav__link ember-view">Services</router-link> 
         <router-link :to="{ name: 'Work' }" class="nav__link ember-view">Work</router-link> 
@@ -21,6 +25,11 @@ import Logo from '../logo.vue'
 
 export default {
   name: 'main-header',
+  data () {
+    return {
+      mobShow: false
+    }
+  },
   components: {
     Logo
   }

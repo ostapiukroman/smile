@@ -188,7 +188,7 @@ import latestPosts from '../components/latest-posts.vue'
 import likeIcon from '../components/icons/like.vue'
 
 export default {
-  name: 'Ember',
+  name: 'Phoenix-consulting',
   data () {
     return {
       cutId: [8, 9],
@@ -238,6 +238,9 @@ export default {
     contactForm,
     likeIcon,
     latestPosts
+  },
+  created: function () {
+    this.$root.title = 'Phoenix Consulting'
   }
 }
 </script>

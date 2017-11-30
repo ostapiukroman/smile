@@ -17,6 +17,9 @@ export default {
       categories: categories
     }
   },
+  created: function () {
+    this.$root.title = 'Blog | Categories'
+  },
   components: {
     count
   }

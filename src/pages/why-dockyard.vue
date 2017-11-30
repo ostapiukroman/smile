@@ -48,6 +48,9 @@ export default {
       post: null
     }
   },
+  created: function () {
+    this.$root.title = 'Why Dockyard'
+  },
   components: {
     listSubService
   }

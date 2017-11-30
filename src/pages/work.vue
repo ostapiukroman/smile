@@ -38,6 +38,9 @@ export default {
       fileWay: null
     }
   },
+  created: function () {
+    this.$root.title = 'Work'
+  },
   components: {
     arrowRight,
     clients

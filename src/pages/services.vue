@@ -18,13 +18,16 @@
 import listStack from '../components/list-stack.vue'
 
 export default {
-  name: 'Sercices',
+  name: 'Services',
   data () {
     return {
       title: 'How we can help',
       subtitle: 'Whether you need a full stack engagement, staff augmentation, training, code/UX audits, design, or user experience testing we offer services that can take your project to the next level.',
       listHeading: 'What we can do for you'
     }
+  },
+  created: function () {
+    this.$root.title = 'Services'
   },
   components: {
     listStack
