@@ -32,6 +32,14 @@ export default {
   },
   components: {
     Logo
+  },
+  watch: {
+    '$route': 'hideMenu'
+  },
+  methods: {
+    hideMenu () {
+      this.mobShow = false
+    }
   }
 }
 </script>

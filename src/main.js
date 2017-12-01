@@ -5,8 +5,8 @@ import App from './App'
 import router from './router'
 
 // styles
-require('./assets/style/style1.css')
-require('./assets/style/style2.css')
+import './assets/style/style1.less'
+import './assets/style/style2.less'
 
 Vue.config.productionTip = false
 

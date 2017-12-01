@@ -1,7 +1,7 @@
 <template>
   <nav class="blog__nav">
     <div class="l-blog-wrap">
-      <div id="ember826" class="nav-dropdown ember-view"><button class="nav-dropdown__mobile-toggle" data-ember-action="" data-ember-action-827="827">
+      <div id="ember826" class="nav-dropdown ember-view"><button class="nav-dropdown__mobile-toggle" :class="status ? 'active' : 'hide'" v-on:click="status = !status">
         All Posts
       <svg viewBox="0 0 53 32" class="icon-svg icon-chevron-down" aria-label="Arrow pointing down"><path stroke-width="4.5714" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M50.286 2.286l-25.033 25.143-22.967-23.069"></path></svg>
     </button>
@@ -22,7 +22,8 @@ export default {
   name: 'Blog',
   data () {
     return {
-      categories: []
+      categories: [],
+      status: false
     }
   },
   props: {
@@ -40,6 +41,8 @@ export default {
   methods: {
     getPage () {
       const self = this
+      // hide menu on mobile
+      self.status = false
       // Set categories info for slugs from array (topCat)
       categories.forEach(function (array) {
         if (self.topCat.indexOf(array.slug) >= 0) {
