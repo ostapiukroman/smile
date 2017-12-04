@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import arrowLeft from './icons/arrowLeft.vue'
-import serviceData from '../resource/services.json'
+import arrowLeft from '@/components/icons/arrowLeft.vue'
+import serviceData from '@/resource/services.json'
 
 export default {
   name: 'list-stack',

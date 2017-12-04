@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import count from './count.vue'
+import count from '@/components/content/count.vue'
 export default {
   name: 'Categories',
   data: function () {

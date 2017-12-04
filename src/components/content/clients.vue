@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import clients from '../resource/clients.json'
+import clients from '@/resource/clients.json'
 
 export default {
   name: 'CanHelpSection',

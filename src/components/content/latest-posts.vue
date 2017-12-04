@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import arrowLeft from '../components/icons/arrowLeft.vue'
-import blog from '../resource/blog.json'
+import arrowLeft from '@/components/icons/arrowLeft.vue'
+import blog from '@/resource/blog.json'
 
 export default {
   name: 'LatestPosts',

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import arrowLeft from './icons/arrowLeft.vue'
+import arrowLeft from '@/components/icons/arrowLeft.vue'
 export default {
   name: 'listPagination',
   data () {

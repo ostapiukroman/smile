@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import categories from '../resource/categories.json'
+import categories from '@/resource/categories.json'
 export default {
   name: 'Blog',
   data () {

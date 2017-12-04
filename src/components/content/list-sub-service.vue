@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import serviceData from '../resource/services.json'
-import arrowRight from './icons/arrowLeft.vue'
+import serviceData from '@/resource/services.json'
+import arrowRight from '@/components/icons/arrowLeft.vue'
 
 export default {
   name: 'ListSubService',

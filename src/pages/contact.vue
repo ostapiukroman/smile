@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import contactForm from '../components/contact-form.vue'
+import contactForm from '@/components/form/contact-form.vue'
 export default {
   name: 'Contact',
   data () {

@@ -89,7 +89,7 @@
 </template>
 
 <script>
-import lastCliets from '../components/last-clients.vue'
+import lastCliets from '@/components/content/last-clients.vue'
 export default {
   name: 'Press',
   data: function () {

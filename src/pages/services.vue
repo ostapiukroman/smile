@@ -15,7 +15,7 @@
 
 <script>
 
-import listStack from '../components/list-stack.vue'
+import listStack from '@/components/navigation/list-stack.vue'
 
 export default {
   name: 'Services',

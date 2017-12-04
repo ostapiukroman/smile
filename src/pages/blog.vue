@@ -17,14 +17,14 @@
 
 <script>
 // Data
-import posts from '../resource/blog.json'
-import categories from '../resource/categories.json'
-import authors from '../resource/authors.json'
+import posts from '@/resource/blog.json'
+import categories from '@/resource/categories.json'
+import authors from '@/resource/authors.json'
 // Components
-import postShortTemplate from '../components/post-short-template.vue'
-import listPagination from '../components/list-pagination.vue'
-import blogNav from '../components/blog-nav.vue'
-import filterHeader from '../components/filter-header.vue'
+import postShortTemplate from '@/components/content/post-short-template.vue'
+import listPagination from '@/components/navigation/list-pagination.vue'
+import blogNav from '@/components/navigation/blog-nav.vue'
+import filterHeader from '@/components/content/filter-header.vue'
 
 export default {
   name: 'Blog',

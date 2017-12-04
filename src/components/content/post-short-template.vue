@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import getAuthorLink from '../components/get-author-link.vue'
+import getAuthorLink from '@/components/navigation/get-author-link.vue'
 
 export default {
   name: 'CategoryCount',

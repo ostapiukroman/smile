@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import arrowRight from '../components/icons/arrowLeft.vue'
-import clients from '../components/clients.vue'
-import serviceData from '../resource/services.json'
+import arrowRight from '@/components/icons/arrowLeft.vue'
+import clients from '@/components/content/clients.vue'
+import serviceData from '@/resource/services.json'
 
 export default {
   name: 'Work',

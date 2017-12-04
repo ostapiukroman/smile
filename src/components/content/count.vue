@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import posts from '../resource/blog.json'
+import posts from '@/resource/blog.json'
 
 export default {
   name: 'CategoryCount',

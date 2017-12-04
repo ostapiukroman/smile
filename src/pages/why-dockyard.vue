@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import listSubService from '../components/list-sub-service.vue'
+import listSubService from '@/components/content/list-sub-service.vue'
 
 export default {
   name: 'whyDockyard',

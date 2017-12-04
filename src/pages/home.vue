@@ -70,10 +70,10 @@
 </template>
 
 <script>
-import latestPosts from '../components/latest-posts.vue'
-import arrowLeft from '../components/icons/arrowLeft.vue'
-import lastCliets from '../components/last-clients.vue'
-import servicesTabs from '../components/services-tabs.vue'
+import latestPosts from '@/components/content/latest-posts.vue'
+import arrowLeft from '@/components/icons/arrowLeft.vue'
+import lastCliets from '@/components/content/last-clients.vue'
+import servicesTabs from '@/components/content/services-tabs.vue'
 export default {
   name: 'Home',
   data () {

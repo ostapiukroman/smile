@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import authors from '../resource/authors.json'
+import authors from '@/resource/authors.json'
 
 export default {
   name: 'AuthorLink',

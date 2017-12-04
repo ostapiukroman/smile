@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import pages from '../../resource/services.json'
+import pages from '@/resource/services.json'
 export default {
   name: 'main-footer',
   data () {

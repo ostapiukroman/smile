@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Logo from '../logo.vue'
+import Logo from '@/components/icons/logo.vue'
 
 export default {
   name: 'main-header',
