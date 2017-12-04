@@ -29,6 +29,22 @@ new Vue({
   methods: {
     getTitle () {
       window.document.title = this.title
+    },
+    findImgWay (arrayClients, imageClass) {
+      arrayClients.forEach(function (array) {
+        // Check if image
+        if (array.logo.search('</svg>') > 0) { return }
+        // Check to if this way
+        if (array.logo.search('src="/') < 0) { return }
+
+        var imgWay = array.logo.substring(array.logo.search('src="') + 6)
+        imgWay = imgWay.substring(0, imgWay.search('"'))
+        // eslint-disable-next-line
+        var imgClass = (array.logo.search('class="') >= 0) ? array.logo.substring(array.logo.search('class="') + 8) : ''
+        imgClass = imgClass.substring(0, imgClass.search('"'))
+        array.logo = '<img src="' + require('@/' + imgWay) + '" class="' + imageClass + ' ' + imgClass + '">'
+      })
+      return arrayClients
     }
   }
 })

@@ -4,19 +4,19 @@
         "desc": "When McGraw-Hill Education decided it was time to rebuild their decade-old, industry-leading educational software they trusted DockYard to bring them into the future. We added engineering capacity to their growing Ember.js team and helped lead the architectural efforts and kept launch on-schedule."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/nasdaq-11a762ee26d82f0a199df72a8cd0418d.png\" alt=\"NASDAQ\" class=\"client__logo client__logo--nasdaq\">",
+        "logo": "<img src=\"/assets/img/clients/nasdaq-11a762ee26d82f0a199df72a8cd0418d.png\" alt=\"NASDAQ\" class=\"client__logo client__logo--nasdaq\">",
         "desc": "Nasdaq hired DockYard to build out an Ember.js application to facilitate a blockchain-based equity application. We were involved with the architecture and implementation of the Ember application, collaborating with their backend team."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/dnc-9a6f4e0b0710865c4f53d2f79b2a9446.jpg\" alt=\"Democratic National Committee\" class=\"client__logo client__logo--dnc\">",
+        "logo": "<img src=\"/assets/img/clients/dnc-9a6f4e0b0710865c4f53d2f79b2a9446.jpg\" alt=\"Democratic National Committee\" class=\"client__logo client__logo--dnc\">",
         "desc": "In 2013 the DNC approached DockYard for assistance in updating their Phone Tool application. DockYard has deep roots in the Democratic technology community and we delivered the updated product on time and on budget."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/openbay-97c91a260fdadbef71683a545d12694c.png\" alt=\"Openbay\" class=\"client__logo client__logo--openbay\">",
+        "logo": "<img src=\"/assets/img/clients/openbay-97c91a260fdadbef71683a545d12694c.png\" alt=\"Openbay\" class=\"client__logo client__logo--openbay\">",
         "desc": "Openbay approached DockYard to help build their MVP application. We branded, designed, and developed the marketplace that connects vehicle service providers with customers in need of competitive pricing and servicers they can trust."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/flywheel-a0053c679672ebd2fda35673eec1fff0.jpg\" alt=\"Flywheel\" class=\"client__logo client__logo--flywheel\">",
+        "logo": "<img src=\"/assets/img/clients/flywheel-a0053c679672ebd2fda35673eec1fff0.jpg\" alt=\"Flywheel\" class=\"client__logo client__logo--flywheel\">",
         "desc": "Flywheel is a competitive, in-classroom spin cycling experience. Flywheel hired DockYard to rebuild their Windows-based applications as a modern web-based suite of tools. DockYard identified high-value UX enhancements with the existing application, working closely with Flywheel instructors to provide a modern redesign that was then built into a web application with Ember.js."
     },
     {
@@ -24,7 +24,7 @@
         "desc": "Our developers worked with a large team of Constant Contact developers, designers, and managers. We primarily worked with Rails server side code, contributed to internal Ruby libraries, and performed application optimizations."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/society-of-grownups-8d3d394e1d334380b4b7e0af38886167.png\" alt=\"Society of Grownups\" class=\"client__logo client__logo--society-of-grownups\">",
+        "logo": "<img src=\"/assets/img/clients/society-of-grownups-8d3d394e1d334380b4b7e0af38886167.png\" alt=\"Society of Grownups\" class=\"client__logo client__logo--society-of-grownups\">",
         "desc": "SOG approached DockYard to improve the quality of code in their existing Ember.js application. The engagement grew to a rebuild of the Ember.js application implementing our best practices and a rebuild of the Node.js backed with Elixir/Phoenix. DockYard was responsible for working alongside the SOG engineers as well as managing the project."
     },
     {
@@ -36,7 +36,7 @@
         "desc": "Using the results from our heuristics analysis and user research, our team redesigned their real-time ad buying and campaign management tool."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/workers-voice-235b5bdedae0753973b2c2ea8e13a4a0.png\" alt=\"Worker’s Voice\" class=\"client__logo client__logo--workers-voice\">",
+        "logo": "<img src=\"/assets/img/clients/workers-voice-235b5bdedae0753973b2c2ea8e13a4a0.png\" alt=\"Worker’s Voice\" class=\"client__logo client__logo--workers-voice\">",
         "desc": "We designed and developed a platform for Workers Voice to help grassroots organizers improve engagement and quality of work from their activists."
     },
     {
@@ -44,19 +44,19 @@
         "desc": "A Boston-based entrepreneur trusted DockYard to develop a modern skill-sharing marketplace. We were responsible for the design, engineering, and project management of the application. We also worked closely with the client after launch to help build her engineering team."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/mariana-tek-90a26d94b56669e8802bb413b991a27d.png\" alt=\"Mariana Tek\" class=\"client__logo client__logo--mariana\">",
+        "logo": "<img src=\"/assets/img/clients/mariana-tek-90a26d94b56669e8802bb413b991a27d.png\" alt=\"Mariana Tek\" class=\"client__logo client__logo--mariana\">",
         "desc": "From initial research and a few design sprints to full scale visual design, we designed a cross-platform end-to-end fitness studio registration, point of sale, administration, and reporting application."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/ppf-d18319800237b6e8fc80ce6675aec7ab.png\" alt=\"Participatory Politics Foundation\" class=\"client__logo client__logo--ppf\">",
+        "logo": "<img src=\"/assets/img/clients/ppf-d18319800237b6e8fc80ce6675aec7ab.png\" alt=\"Participatory Politics Foundation\" class=\"client__logo client__logo--ppf\">",
         "desc": "We designed and developed a responsive web application for concerned citizens to view political histories and ask questions to city and state elected officials surrounding current issues."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/tapology-0a3061a806f86019bb019a8fbf2e5ecd.png\" alt=\"Tapology\" class=\"client__logo client__logo--tapology\">",
+        "logo": "<img src=\"/assets/img/clients/tapology-0a3061a806f86019bb019a8fbf2e5ecd.png\" alt=\"Tapology\" class=\"client__logo client__logo--tapology\">",
         "desc": "Tapology is a Mixed Martial Arts network that connects fans from all over the world. They hired us to scale their existing Rails infrastructure and update their technology stack."
     },
     {
-        "logo": "<img src=\"https://assets.dockyard.com/assets/images/clients/connexio-182772fa8a0369d0232bba17a409c0de.jpg\" alt=\"Connexio Labs\" class=\"client__logo client__logo--connexio\">",
+        "logo": "<img src=\"/assets/img/clients/connexio-182772fa8a0369d0232bba17a409c0de.jpg\" alt=\"Connexio Labs\" class=\"client__logo client__logo--connexio\">",
         "desc": "DockYard joined the Connexio development team in developing an application for facilitating call center campaigns. We helped get Connexio back on track for their delivery date and made major contributions to their code quality."
     }
 ]

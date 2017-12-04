@@ -6,7 +6,7 @@
         <h2 class="t-sub-display-secondary">{{post.desc}}</h2>
       </div>
       <div class="section__wide">
-        <img :src="'https://dockyard.com/assets/images/work/' + post.img" :alt="post.img" class="case-study__banner">
+        <img :src="require('@/assets/img/' + post.img)" :alt="post.img" class="case-study__banner">
       </div>
     </section>
     <div v-html="post.body"></div>

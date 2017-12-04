@@ -16,6 +16,7 @@ export default {
     return {
       clientsSection: {
         allClients: clients,
+        imgClass: '',
         showCount: 5,
         clients: null
       }
@@ -26,6 +27,7 @@ export default {
     for (var i = 0; i < this.clientsSection.showCount; i++) {
       this.clientsSection.clients.push(this.clientsSection.allClients[i])
     }
+    this.clientsSection.clients = this.$root.findImgWay(this.clientsSection.clients, this.imgClass)
   }
 }
 </script>

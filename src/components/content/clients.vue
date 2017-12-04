@@ -17,8 +17,12 @@ export default {
   name: 'CanHelpSection',
   data: function () {
     return {
-      clients: clients
+      clients: clients,
+      imgClass: ''
     }
+  },
+  created: function () {
+    this.clients = this.$root.findImgWay(this.clients, this.imgClass)
   }
 }
 </script>

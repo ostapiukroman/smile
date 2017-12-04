@@ -54,7 +54,7 @@
       </header>
       <div class="section__wide">
         <div class="l-card l-card--full-img">
-          <img src="https://assets.dockyard.com/assets/images/design/1-design-proactive-450122271b7bddd523a4729987ada220.jpg" alt="" class="img-jpg">
+          <img src="~@/assets/img/1-design-proactive-450122271b7bddd523a4729987ada220.jpg" alt="" class="img-jpg">
         </div>
       </div>
     </article>
@@ -65,7 +65,7 @@
       </header>
       <div class="section__wide">
         <div class="l-card l-card--full-img">
-          <img src="https://assets.dockyard.com/assets/images/design/2-users-first-d84708ba39f9504d1a76598dca4a8239.jpg" alt="" class="img-jpg">
+          <img src="~@/assets/img/2-users-first-d84708ba39f9504d1a76598dca4a8239.jpg" alt="" class="img-jpg">
         </div>
       </div>
     </article>
@@ -76,7 +76,7 @@
       </header>
       <div class="section__wide">
         <div class="l-card l-card--full-img">
-          <img src="https://assets.dockyard.com/assets/images/design/3-mitigate-risk-3d0e11000964361724e78853129fc99c.jpg" alt="" class="img-jpg">
+          <img src="~@/assets/img/3-mitigate-risk-3d0e11000964361724e78853129fc99c.jpg" alt="" class="img-jpg">
         </div>
       </div>
     </article>
@@ -87,7 +87,7 @@
       </header>
       <div class="section__wide">
         <div class="l-card l-card--full-img">
-          <img src="https://assets.dockyard.com/assets/images/design/4-reduce-costs-1fc44cdf9a6493efb5361cf95626f814.jpg" alt="" class="img-jpg">
+          <img src="~@/assets/img/4-reduce-costs-1fc44cdf9a6493efb5361cf95626f814.jpg" alt="" class="img-jpg">
         </div>
       </div>
     </article>
@@ -98,7 +98,7 @@
       </header>
       <div class="section__wide">
         <div class="l-card l-card--full-img">
-          <img src="https://assets.dockyard.com/assets/images/design/5-improve-f6f16a634e362389bd0d4274aba874ef.jpg" alt="" class="img-jpg">
+          <img src="~@/assets/img/5-improve-f6f16a634e362389bd0d4274aba874ef.jpg" alt="" class="img-jpg">
         </div>
       </div>
     </article>

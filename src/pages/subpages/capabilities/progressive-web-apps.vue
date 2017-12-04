@@ -95,7 +95,7 @@
       </div>
       <div class="grid__item hightide-banner__media">
         <a href="https://hightide.earth" target="_blank">
-          <img src="https://assets.dockyard.com/assets/images/progressive-web-apps/high-tide-screenshot-7139249030927deed27f6e2a7e917421.png" alt="High Tide Progressive Web App" class="hightide-banner__media__image">
+          <img src="~@/assets/img/high-tide-screenshot-7139249030927deed27f6e2a7e917421.png" alt="High Tide Progressive Web App" class="hightide-banner__media__image">
         </a>
       </div>
     </section>

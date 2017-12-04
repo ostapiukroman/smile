@@ -17,7 +17,7 @@
         </header>
         <div class="section__wide">
           <div class="l-card l-card--full-img">
-            <img src="https://assets.dockyard.com/assets/images/why-dockyard/pioneers-7a329e1c465f5098ee444f8a5abd4de3.jpg" alt="" class="img-jpg">
+            <img :src="require('@/assets/img/pioneers-7a329e1c465f5098ee444f8a5abd4de3.jpg')" alt="" class="img-jpg">
           </div>
         </div>
       </article>
@@ -28,7 +28,7 @@
         </header>
         <div class="section__wide">
           <div class="l-card l-card--full-img">
-            <img src="https://assets.dockyard.com/assets/images/why-dockyard/agile-1402d9ccec5559a1cf014b444c23cd60.jpg" alt="" class="img-jpg">
+            <img :src="require('@/assets/img/agile-1402d9ccec5559a1cf014b444c23cd60.jpg')" alt="" class="img-jpg">
           </div>
         </div>
       </article>
