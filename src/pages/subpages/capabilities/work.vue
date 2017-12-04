@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import serviceData from '../../resource/services.json'
-import canHelp from '../../components/can-help.vue'
+import serviceData from '@/resource/services.json'
+import canHelp from '@/components/navigation/can-help.vue'
 
 export default {
   name: 'subWork',

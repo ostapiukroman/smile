@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="l-mobile-gutter">
   	<router-link v-for="author in authors" :key="author.slug" :to="{ name: 'Author', params: { slug: author.slug, page_id: 1 } }" class="filter ember-view" :class="author.slug">
       <img src="~@/assets/img/default.jpg" class="filter__image">
   		<h2 class="filter__name t-heading">{{ author.name }}</h2>
@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import authors from '../../resource/authors.json'
-import count from '../../components/count.vue'
+import authors from '@/resource/authors.json'
+import count from '@/components/content/count.vue'
 export default {
   name: 'Categories',
   data: function () {

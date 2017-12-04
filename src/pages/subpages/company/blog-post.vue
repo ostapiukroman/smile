@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import subscribe from '../../components/subscribe.vue'
-import serviceData from '../../resource/blog.json'
-import getAuthorLink from '../../components/get-author-link.vue'
-import getCategories from '../../components/get-categories.vue'
+import subscribe from '@/components/form/subscribe.vue'
+import serviceData from '@/resource/blog.json'
+import getAuthorLink from '@/components/navigation/get-author-link.vue'
+import getCategories from '@/components/navigation/get-categories.vue'
 
 export default {
   name: 'Design',

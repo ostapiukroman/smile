@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import listStack from '../../components/list-stack.vue'
-import serviceData from '../../resource/services.json'
+import listStack from '@/components/navigation/list-stack.vue'
+import serviceData from '@/resource/services.json'
 
 export default {
   name: 'Design',
